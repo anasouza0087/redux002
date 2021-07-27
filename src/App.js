@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Intervalo from './componentes/Intervalo';
+import Media from './componentes/Media';
+import Soma from './componentes/Soma';
+import Sorteio from './componentes/Sorteio';
 
 function App() {
+
+  const styles = {
+    textAlign: 'center',
+    marginTop: '20px',
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={styles}>
+      <h1>React Redux - Simples</h1>
+      <Intervalo></Intervalo>
+      <Media></Media>
+      <Soma></Soma>
+      <Sorteio></Sorteio>
     </div>
   );
 }
